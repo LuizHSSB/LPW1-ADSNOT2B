@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pedido</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="index.html">A Empresa</a>
+                <ul class="dropdown-menu">
+                    <li><a href="missao.html">Missão</a></li>
+                    <li><a href="visao.html">Visão</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="testeeee.html">Pedidos</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+  
+
+    <div class="container">
+        <form>
+            <h2>Pedido</h2>
+            <br>
+            <br>
+
+            <!-- Cadastro de vendedores -->
+            <div class="block">
+                <label for="vendedor">Vendedor</label>
+                <input type="text" id="vendedor" name="vendedor" placeholder="Ex: João da Silva">
+            </div>
+
+            <!-- Linha Empresa e CNPJ -->
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Ex: ESCTEC">
+                </div>
+                <div class="flex-item">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" name="cnpj" placeholder="Ex: 000.000.000-00">
+                </div>
+            </div>
+
+            <!-- Linha Endereço, Cidade e UF -->
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Quadra, Conjunto">
+                </div>
+                <div class="flex-item">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Ex: Xique-Xique">
+                </div>
+                <div class="flex-item">
+                    <label for="uf">UF</label>
+                    <select id="uf" name="uf">
+                        <option selected disabled value="">UF</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Linha Telefone e Email -->
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Ex: 61 9 9999 9999">
+                </div>
+                <div class="flex-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                </div>
+            </div>
+            <br><br>
+            <div class="section-title">Produtos</div>
+            <br>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Selecione o produto</th>
+                        <th>Descrição</th>
+                        <th>Valor Unitário</th>
+                        <th>Qtde</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected disabled value="">Selecione um Produto</option>
+                                <option value="cadeira">Cadeira</option>
+                                <option value="mesa">Mesa</option>
+                                <option value="diversos">Diversos</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="descricao1"></td>
+                        <td><input type="text" name="valorUnitario1"></td>
+                        <td><input type="text" name="quantidade1"></td>
+                        <td><input type="text" name="valorTotal1" readonly></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected disabled value="">Selecione um Produto</option>
+                                <option value="cadeira">Cadeira</option>
+                                <option value="mesa">Mesa</option>
+                                <option value="diversos">Diversos</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="descricao2"></td>
+                        <td><input type="text" name="valorUnitario2"></td>
+                        <td><input type="text" name="quantidade2"></td>
+                        <td><input type="text" name="valorTotal2" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected disabled value="">Selecione um Produto</option>
+                                <option value="cadeira">Cadeira</option>
+                                <option value="mesa">Mesa</option>
+                                <option value="diversos">Diversos</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="descricao3"></td>
+                        <td><input type="text" name="valorUnitario3"></td>
+                        <td><input type="text" name="quantidade3"></td>
+                        <td><input type="text" name="valorTotal3" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected disabled value="">Selecione um Produto</option>
+                                <option value="cadeira">Cadeira</option>
+                                <option value="mesa">Mesa</option>
+                                <option value="diversos">Diversos</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="descricao4"></td>
+                        <td><input type="text" name="valorUnitario4"></td>
+                        <td><input type="text" name="quantidade4"></td>
+                        <td><input type="text" name="valorTotal4" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected disabled value="">Selecione um Produto</option>
+                                <option value="cadeira">Cadeira</option>
+                                <option value="mesa">Mesa</option>
+                                <option value="diversos">Diversos</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="descricao5"></td>
+                        <td><input type="text" name="valorUnitario5"></td>
+                        <td><input type="text" name="quantidade5"></td>
+                        <td><input type="text" name="valorTotal5" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <div class="total-alignment">
+                <label for="totalPedido">Valor Total do Pedido</label>
+                <input type="text" id="totalPedido" readonly>
+            </div>
+            <br>
+            <div class="block">
+                <label for="vendedorSelect">Vendedor</label>
+                <select id="vendedorSelect" name="vendedorSelect">
+                    <option selected disabled value="">Selecione um Vendedor</option>
+                    <option value="1">1 - João Silva</option>
+                    <option value="2">2 - Yuri Alberto</option>
+                    <option value="3">3 - Carlos Pereira</option>
+                    <option value="4">4 - Ana Costa</option>
+                    <option value="5">5 - Stephanie Cardoso</option>
+                </select>
+            </div>
+            <div class="section-title">Como conheceu a ESCTEC?</div>
+            <label><input type="radio" name="conheceu" value="internet"> Internet</label>
+            <label><input type="radio" name="conheceu" value="amigos"> Amigos</label>
+            <label><input type="radio" name="conheceu" value="outros"> Outros</label>
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Deixe seu feedback"></textarea>
+            <br><br>
+
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ESCTEC Brasil - telefone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
+    </footer>
+
+</body>
+</html>
