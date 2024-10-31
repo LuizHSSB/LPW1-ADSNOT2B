@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_diversos.css">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
     <title>ESCTEC</title>
 </head>
+
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">A Empresa</a>
-                <ul>
-                    <li><a href="missao.html">Missão</a></li>
-                    <li><a href="visao.html">Visão</a></li>
-                    <li><a href="valores.html">Valores</a></li>
-                </ul>
-            </li>
-            <li><a href="./produtos.html">Produtos</a>
-                <ul>
-                    <li><a href="./cadeiras.html">Cadeiras</a></li>
-                    <li><a href="./mesas.html">Mesas</a></li>
-                    <li><a href="./diversos.html">Diversos</a></li>
-                </ul>
-            </li>
-            <li><a href="pedido.html">Pedidos</a></li> 
-            <li><a href="contato.html">Contatos</a></li>
-        </ul>
+        <div class="Logo">
+            <img src="img/logo_inicial .jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Produtos</a> <!-- Link para Produtos -->
+                    <div class="dropdown-menu">
+                        <a href="./cadeiras.html">Cadeiras</a>
+                        <a href="./mesas.html">Mesas</a>
+                        <a href="./diversos.html">Diversos</a>
+                    </div>
+                </li>
+
+                <li><a href="pedido.html">Pedidos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Quem somos</a>
+                    <div class="dropdown-menu">
+                        <a href="missao.html">Missão</a>
+                        <a href="visao.html">Visão</a>
+                        <a href="valores.html">Valores</a>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <div class="background">
+        <h1 class="overlay-text">DIVERSOS</h1>
+    </div>
+
     <main id="pagina-produtos">
         <section class="produtos">
             <article class="produto">
                 <img src="./img/diversos-para-cama-box-king-193-m-max-branco-max_st0.webp" alt="">
                 <h3>BASE PARA CAMA BOX KING 1,93 M MAX</h3>
-                <p class="descicao">Cor: Branco Id: 179970</p>
+                <p class="descricao">Cor: Branco Id: 179970</p>
             </article>
             <article class="produto">
                 <img src="./img/diversos-45-cm-x-45-cm-caminhos-do-sol-flora-verde-rosa-caminhos-do-sol_st0.png" alt="">
                 <h3>PUFF 45 CM X 45 CM FLORA CAMINHOS DO SOL</h3>
-                <p class="descicao">Cor: Verde/Rosa Id: 436016</p>
+                <p class="descricao">Cor: Verde/Rosa Id: 436016</p>
             </article>
             <article class="produto">
                 <img src="./img/diversos-cama-3-lugares-buzz-bege-buzz_st0.png" alt="">
                 <h3>SOFÁ-CAMA 3 LUGARES BUZZ</h3>
-                <p class="descicao">Cor: Bege Id: 429972</p>
+                <p class="descricao">Cor: Bege Id: 429972</p>
             </article>
             <article class="produto">
                 <img src="./img/diversos-arvore-de-natal-150-m-verde-celebration_st0.webp" alt="">
@@ -51,18 +72,20 @@
             <article class="produto">
                 <img src="./img/diversos-50-cm-x-50-cm-dressage-tanino-loden-green-dressage_st0.png" alt="">
                 <h3>ALMOFADA 50 CM X 50 CM DRESSAGE</h3>
-                <p class="descicao">Cor: TANINO/LODEN GREEN Id: 433447</p>
+                <p class="descricao">Cor: TANINO/LODEN GREEN Id: 433447</p>
             </article>
             <article class="produto">
                 <img src="./img/diversos-2-m-x-250-m-sargi-natural-sargi_st0.png" alt="">
                 <h3>TAPETE 2 M X 2,50 M SARGI</h3>
-                <p class="descicao">Cor: NATURAL Id: 433527</p>
+                <p class="descricao">Cor: NATURAL Id: 433527</p>
             </article>
-            <article class="produto"></article>
+
+            <article class="produto">
                 <img src="./img/luminaria-de-teto-ansbach.jpg" alt="">
                 <h3>LUMINÁRIA DE TETO ANSBACH L 60 X A 3.5 X P 60 CM</h3>
-                <p class="descicao">Cor: BRANCO Id: 429900</p>
+                <p class="descricao">Cor: BRANCO Id: 429900</p>
             </article>
+
             <article class="produto">
                 <img src="./img/lustre-athena.jpg" alt="">
                 <h3>LUSTRE ATHENA L 80 X A 40 X P 80 CM</h3>
@@ -71,17 +94,22 @@
             <article class="produto">
                 <img src="./img/luminaria-fathful.jpg" alt="">
                 <h3>LUMINÁRIA FAITHFUL</h3>
-                <p class="descicao">Cor: PRATA Id: 435547</p>
+                <p class="descricao">Cor: PRATA Id: 435547</p>
             </article>
             <article class="produto">
                 <img src="./img/luminaria-liv.jpg" alt="">
                 <h3>LUMINÁRIA LIV</h3>
-                <p class="descicao">Cor: DOURADO Id: 495367</p>
+                <p class="descricao">Cor: DOURADO Id: 495367</p>
             </article>
     </main>
     <footer>
-        <p>&copy; 2024 ESCTEC Brasil - telefone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Alunos Faculdade SENAC DF</span>
+        <img style="object-fit: contain;" id="logo2" src="img/logo_inicial .jpg">
+          
+            
     </footer>
-    
+
 </body>
+
 </html>

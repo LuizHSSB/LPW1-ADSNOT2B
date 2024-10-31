@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESCTECX Brasil Móveis</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
+<link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
 </head>
+
 <body>
+    <!--Aqui está o header do site onde está a logo-->
+    <header>
+        <div class="Logo">
+            <img src="img/logo_inicial .jpg">
+        </div>
+   
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#">A Empresa</a>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Produtos</a> <!-- Link para Produtos -->
                 <div class="dropdown-menu">
-                    <a href="missao.html">Missão</a>              
-                    <a href="visao.html">Visão</a>
-                    <a href="valores.html">Valores</a>
+                    <a href="./cadeiras.html">Cadeiras</a>
+                    <a href="./mesas.html">Mesas</a>
+                    <a href="./diversos.html">Diversos</a>
                 </div>
             </li>
-            <li>
-                <a href="Produtos.html">Produtos</a> <!-- Link para Produtos -->
-            </li>
+
             <li>
                 <a href="pedido.html">Pedidos</a> <!-- Link para Pedidos -->
             </li>
             <li>
                 <a href="contato.html">Contatos</a> <!-- Link para Contatos -->
+
+            </li>
+            <li class="dropdown">
+                <a href="#">Quem somos</a>
+                <div class="dropdown-menu">
+                    <a href="missao.html">Missão</a>
+                    <a href="visao.html">Visão</a>
+                    <a href="valores.html">Valores</a>
+
+                </div>
             </li>
         </ul>
     </nav>
+    </header>
+
+<!--Banner página inicial-->
+<main>
+    <div class="banner">
+            <img src="img/bakcground_index.jpg" style="width:100%; height:auto;">
+    </div>
+    <div class="container">
+        <h1>AMBIENTES QUE CONTAM HISTÓTIAS</h1>
+        <p>Nossa marca cria ambientes que refletem personalidade e experiências únicas.<br> 
+            Com produtos exclusivos, trazemos autenticidade e elegância para cada canto da sua casa. <br> 
+            Transforme salas, quartos e cozinhas com nossa coleção, 
+            e veja como nossos produtos podem transformar o seu lar!</p>
+        
+    </div>
+    <div class="container2">
+        <img src="img/foto1_index.jpg">
+        <img src="img/foto2_index.jpg">
+    </div>
+
+    <div class="texto">
+        <h1>PARA TODOS OS LUGARES</h1>
+    </div>
+
+    <div class="imagens2">
+        <img src="img/cozinha_index.jpg">
+        <img src="img/escritorio_index.jpg">
+        <img src="img/varanda_index.jpg">
+    </div>
+
+    </main>
+
+<footer>
+    <span>Todos os direitos reservados ©</span>
+    <span>Desenvolvido por: Alunos Faculdade SENAC DF</span>
+    <img style="object-fit: contain;" id="logo2" src="img/logo_inicial .jpg">
+    
+    </footer>
+
 </body>
+
 </html>
