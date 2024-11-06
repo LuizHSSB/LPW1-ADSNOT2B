@@ -1120,3 +1120,4 @@ function liv4(){
     document.querySelector("#descricao5").value = "LUMINÁRIA LIV, Cor: DOURADO, Id: 495367"
     document.querySelector("#valorUnitario5").value = "R$:459,99"
 };
+
