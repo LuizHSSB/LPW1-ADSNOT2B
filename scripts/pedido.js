@@ -1,6 +1,15 @@
-document.querySelector("#produtoSelecionado-0").addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
-    const OpcaoSelecionada = this.options[this.selectedIndex];
-    const opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
+const selectProduto0 = document.querySelector("#produtoSelecionado-0");
+const selectProduto1 = document.querySelector("#produtoSelecionado-1");
+const selectProduto2 = document.querySelector("#produtoSelecionado-2");
+const selectProduto3 = document.querySelector("#produtoSelecionado-3");
+const selectProduto4 = document.querySelector("#produtoSelecionado-4");
+
+let OpcaoSelecionada;
+let opcaoID;
+
+selectProduto0.addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
+    OpcaoSelecionada = this.options[this.selectedIndex];
+    opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
     
     switch (opcaoID){ // <- Iniciando um Switch Case, onde cada caso é o id de um produto, através de cada id criaremos uma função diferente
         case "selected":
@@ -240,14 +249,10 @@ function liv(){
     document.querySelector("#valorUnitario1").value = "R$:459,99"
 };
 
-document.querySelector("#produtoSelecionado-1").addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
-    const OpcaoSelecionada = this.options[this.selectedIndex];
-    const opcaoID1 = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
-    
+selectProduto1.addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
+    OpcaoSelecionada = this.options[this.selectedIndex];
+    opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
     switch (opcaoID){ // <- Iniciando um Switch Case, onde cada caso é o id de um produto, através de cada id criaremos uma função diferente
-        case "selected":
-            vazio1()
-        break
         case "435307-1":
             cadeiraXeque1();
         break
@@ -340,8 +345,6 @@ document.querySelector("#produtoSelecionado-1").addEventListener("change",functi
         break
     }
 });
-
-// Aqui começam as funções que preenchem cada espaço "Descrição" e "Valor Unitário" com seus respectivos valores
 
 function cadeiraXeque1(){
     document.querySelector("#descricao2").value = "CADEIRA XEQUE, Cor: BOUCLÉ BRANCO, Id: 435307"
@@ -463,3 +466,18 @@ function liv1(){
     document.querySelector("#descricao2").value = "LUMINÁRIA LIV, Cor: DOURADO, Id: 495367"
     document.querySelector("#valorUnitario2").value = "R$:459,99"
 };
+
+selectProduto2.addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
+    OpcaoSelecionada = this.options[this.selectedIndex];
+    opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
+});
+
+selectProduto3.addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
+    OpcaoSelecionada = this.options[this.selectedIndex];
+    opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
+});
+
+selectProduto4.addEventListener("change",function(){ //<- selecionando o select responsável pelos produtos e iniciando uma função ao receber a aspecto "change"
+    OpcaoSelecionada = this.options[this.selectedIndex];
+    opcaoID = OpcaoSelecionada.id; // <-- obtendo o ID do produto selecionado
+});
