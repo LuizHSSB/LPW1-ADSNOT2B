@@ -4,8 +4,6 @@ const qntEscolhida2 = document.querySelector("#quantidade2");
 const qntEscolhida3 = document.querySelector("#quantidade3");
 const qntEscolhida4 = document.querySelector("#quantidade4");
 
-
-
 qntEscolhida0.addEventListener("blur",function(){
     let VU0 = document.querySelector("#valorUnitario1").value
     let Q0 = document.querySelector("#quantidade0").value
@@ -14,7 +12,6 @@ qntEscolhida0.addEventListener("blur",function(){
 
     let totalPedido0 = parseFloat(document.querySelector("#totalPedido").value) || 0
     document.querySelector("#totalPedido").value = (totalPedido0 + valorT0).toFixed(2)
-
 });
 
 qntEscolhida1.addEventListener("blur",function(){
@@ -56,5 +53,3 @@ qntEscolhida4.addEventListener("blur",function(){
     let totalPedido4 = parseFloat(document.querySelector("#totalPedido").value) || 0
     document.querySelector("#totalPedido").value = (totalPedido4 + valorT4).toFixed(2)
 });
-
-
