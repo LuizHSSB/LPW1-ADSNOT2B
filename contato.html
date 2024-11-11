@@ -54,29 +54,29 @@
         <h2>Contato</h2>
         <form action="#" method="post">
             <label for="nome">Nome: </label>
-            <input type="text" id="nomeContato" name="nomeContato" placeholder="Nome">
-    </div>
-    <br>
-    <div>
-        <label for="empresa">Empresa: </label>
-        <input type="text" id="empresaContato" name="empresaContato" placeholder="Empresa">
-    </div>
-    <br>
-    <div>
-        <label for="cidade">Cidade: </label>
-        <input type="text" id="cidadeContato" name="cidadeContato" placeholder="Cidade">
-    </div>
-    <br>
-    <div>
-        <label for="telefone">Telefone: </label>
-        <input type="text" id="telefoneContato" name="telefoneContato" placeholder="(XX) XXXXX-XXXX">
-    </div>
-    <br>
-    <div>
-        <label for="email">Email: </label>
-        <input type="text" id="emailContato" name="emailContato" placeholder="exemplo@gmail.com">
-    </div>
-    <br>
+            <input type="text" id="nomeContato" name="nomeContato" placeholder="Nome" onblur="validarCampos(this)">
+        </div>
+        <br>
+        <div>
+            <label for="empresa">Empresa: </label>
+            <input type="text" id="empresaContato" name="empresaContato" placeholder="Empresa" onblur="validarCampos(this)">
+        </div>
+        <br>
+        <div>
+            <label for="cidade">Cidade: </label>
+            <input type="text" id="cidadeContato" name="cidadeContato" placeholder="Cidade" onblur="validarCampos(this)">
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone: </label>
+            <input type="text" id="telefoneContato" name="telefoneContato" placeholder="(XX) XXXXX-XXXX" onblur="validarCampos(this)">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" id="emailContato" name="emailContato" placeholder="exemplo@gmail.com" onblur="validarCampos(this)">
+        </div>
+        <br>
 
     <!-- OPÇÕES DE CONTATO DAS EMPRESAS -->
 
@@ -117,6 +117,7 @@
         <span>Todos os direitos reservados ©</span>
         <span>Desenvolvido por: Alunos Faculdade SENAC DF</span>
         <img style="object-fit: contain;" id="logo2" src="img/logo_inicial .jpg">
-        </footer>
+        <script src="scripts/validacaoContato.js"></script>
+    </footer>
 </body>
 </html

@@ -59,36 +59,63 @@ function validarFormulario() {
     // Validação CNPJ
     if (!validarCNPJ(cnpj)) {
         alert("CNPJ inválido.");
+        document.getElementById("cnpj").style.borderColor = "red"; // Indicador de erro visual
         return false;
     }
+    document.getElementById("cnpj").style.borderColor = "green"; // Indicador de sucesso visual
 
     // Validação Email
     if (!validarEmail(email)) {
         alert("Email inválido.");
+        document.getElementById("email").style.borderColor = "red"; // Indicador de erro visual
         return false;
     }
+    document.getElementById("email").style.borderColor = "green"; // Indicador de sucesso visual
 
     // Validação de textos (empresa, telefone)
     if (!validarTexto(empresa) || !validarTexto(telefone)) {
+        document.getElementById("empresa").style.borderColor = "red"; // Indicador de erro visual
+        document.getElementById("telefone").style.borderColor = "red"; // Indicador de erro visual
         return false;
     }
+
+    document.getElementById("empresa").style.borderColor = "green"; // Indicador de sucesso visual
+    document.getElementById("telefone").style.borderColor = "green"; // Indicador de sucesso visual
 
     return true;
 }
 
 // Eventos onBlur para validação dos campos
 document.getElementById("cnpj").onblur = function() {
-    if (!validarCNPJ(this.value)) alert("CNPJ inválido.");
+    if (!validarCNPJ(this.value)) {
+        alert("CNPJ inválido.");
+        this.style.borderColor = "red"; // Indicador de erro visual
+    } else {
+        this.style.borderColor = "green"; // Indicador de sucesso visual
+    }
 };
 
 document.getElementById("email").onblur = function() {
-    if (!validarEmail(this.value)) alert("Email inválido.");
+    if (!validarEmail(this.value)) {
+        alert("Email inválido.");
+        this.style.borderColor = "red"; // Indicador de erro visual
+    } else {
+        this.style.borderColor = "green"; // Indicador de sucesso visual
+    }
 };
 
 document.getElementById("empresa").onblur = function() {
-    validarTexto(this.value);
+    if (!validarTexto(this.value)) {
+        this.style.borderColor = "red"; // Indicador de erro visual
+    } else {
+        this.style.borderColor = "green"; // Indicador de sucesso visual
+    }
 };
 
 document.getElementById("telefone").onblur = function() {
-    validarTexto(this.value);
+    if (!validarTexto(this.value)) {
+        this.style.borderColor = "red"; // Indicador de erro visual
+    } else {
+        this.style.borderColor = "green"; // Indicador de sucesso visual
+    }
 };
