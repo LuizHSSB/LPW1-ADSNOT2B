@@ -5,31 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_contato.css">
-    <title>Página de Contato</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <title>Contato</title>
 
 </head>
 
 <body>
+    <header>
+        <div class="Logo">
+            <img src="img/logo_inicial .jpg">
+        </div>
+    
+        <nav>
+            <h1 id="cabecalho">
+                <span id="icone"></span><span id="saudacao"></span>
+            </h1> 
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
 
-    <nav>
-        <ul>
-            <li class="dropdown">
-                <a href="index.html">A Empresa</a>
-                <ul class="dropdown-menu">
-                    <li><a href="missao.html">Missão</a></li>
-                    <li><a href="visao.html">Visão</a></li>
-                    <li><a href="valores.html">Valores</a></li>
-                </ul>
-            </li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="pedido.html">Pedidos</a></li>
-            <li><a href="contato.html">Contatos</a></li>
-        </ul>
-    </nav>
+                <li class="dropdown">
+                    <a href="#">Produtos</a> <!-- Link para Produtos -->
+                    <div class="dropdown-menu">
+                        <a href="./cadeiras.html">Cadeiras</a>
+                        <a href="./mesas.html">Mesas</a>
+                        <a href="./diversos.html">Diversos</a>
+                    </div>
+                </li>
 
+                <li>
+                    <a href="pedido.html">Pedidos</a> <!-- Link para Pedidos -->
+                </li>
+                <li>
+                    <a href="contato.html">Contatos</a> <!-- Link para Contatos -->
+
+                </li>
+                <li class="dropdown">
+                    <a href="quemsomos.html">Quem somos</a>
+                </li>
+
+                <li><a href="integrantes.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
     <!-- DADOS PESSOAIS -->
-
-    <div class="form-container">
+    <div>
         <h2>Contato</h2>
         <form action="#" method="post">
             <label for="nome">Nome: </label>
@@ -48,12 +70,12 @@
     <br>
     <div>
         <label for="telefone">Telefone: </label>
-        <input type="text" id="telefoneContato" name="telefoneContato" placeholder="Telefone">
+        <input type="text" id="telefoneContato" name="telefoneContato" placeholder="(XX) XXXXX-XXXX">
     </div>
     <br>
     <div>
         <label for="email">Email: </label>
-        <input type="text" id="emailContato" name="emailContato" placeholder="Email">
+        <input type="text" id="emailContato" name="emailContato" placeholder="exemplo@gmail.com">
     </div>
     <br>
 
@@ -67,13 +89,16 @@
         <option value="marketing">Marketing</option>
         <option value="outros">Outros</option>
     </select>
+    
 
-
+<br><br>
     <p>Como conheceu a ESCTEC?</p>
+    <br>
     <div class="section-title">
         <label for="indicacao"><input type="radio" id="indicacao" name="conheceu" value="indicacao">Indicação</label>
         <label for="email"><input type="radio" id="email" name="email" value="email">Email</label>
-        <label for="buscadores"><input type="radio" id="buscadores" name="buscadores" value="buscadores">Buscadores</label>
+        <label for="buscadores"><input type="radio" id="buscadores" name="buscadores"
+                value="buscadores">Buscadores</label>
     </div>
     <br>
     <!-- O QUADRO DA MENSAGEM  -->
@@ -88,11 +113,11 @@
     </div>
     </form>
     </div>
-
+</main>
     <footer>
-        <p>&copy; 2024 ESCTEC Brasil - telefone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
-    </footer>
-
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Alunos Faculdade SENAC DF</span>
+        <img style="object-fit: contain;" id="logo2" src="img/logo_inicial .jpg">
+        </footer>
 </body>
-
 </html
