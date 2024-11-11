@@ -55,8 +55,19 @@
 
             <!-- Cadastro de vendedores -->
             <div class="block">
+                <label for="vendedorSelect">Vendedor</label>
+                <select id="vendedorSelect" name="vendedorSelect">
+                    <option selected value="">Selecione um Vendedor</option>
+                    <option value="1">1 - João Silva</option>
+                    <option value="2">2 - Yuri Alberto</option>
+                    <option value="3">3 - Carlos Pereira</option>
+                    <option value="4">4 - Ana Costa</option>
+                    <option value="5">5 - Stephanie Cardoso</option>
+                </select>
+            </div>
+            <div class="block">
                 <label for="vendedor">Vendedor</label>
-                <input type="text" id="vendedor" name="vendedor" placeholder="Ex: João da Silva">
+                <input type="text" id="vendedor" name="vendedor" placeholder="Ex: João da Silva" readonly>
             </div>
 
             <!-- Linha Empresa e CNPJ -->
@@ -424,17 +435,6 @@
                 <input type="text" id="totalPedido" readonly value=0.00>
             </div>
             <br>
-            <div class="block">
-                <label for="vendedorSelect">Vendedor</label>
-                <select id="vendedorSelect" name="vendedorSelect">
-                    <option selected disabled value="">Selecione um Vendedor</option>
-                    <option value="1">1 - João Silva</option>
-                    <option value="2">2 - Yuri Alberto</option>
-                    <option value="3">3 - Carlos Pereira</option>
-                    <option value="4">4 - Ana Costa</option>
-                    <option value="5">5 - Stephanie Cardoso</option>
-                </select>
-            </div>
             <div class="section-title">Como conheceu a ESCTEC?</div>
             <label><input type="radio" name="conheceu" value="internet"> Internet</label>
             <label><input type="radio" name="conheceu" value="amigos"> Amigos</label>
@@ -458,8 +458,9 @@
         <img style="object-fit: contain;" id="logo2" src="img/logo_inicial .jpg">
         <script src="scripts/pedido.js"></script>
         <script src="scripts/valorTotal.js"></script>
+        <script src="scripts/validacao.js"></script>
+        <script src="scripts/vendedorComboBox.js"></script>
     </footer>
 
 </body>
-
 </html>
