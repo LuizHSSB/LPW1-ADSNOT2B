@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Estilização dos links do menu*/
+/*Cabeçalho*/
 nav {
     background-color: rgb(0, 0, 0);
 }
@@ -31,9 +31,6 @@ nav li a:hover {
 }
 
 
-
-
-/*Header*/
 header {
     background-color: #ff6100;
 
@@ -46,22 +43,16 @@ header {
     left: 20px;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-
-
     #pagina-produtos {
         padding: 10px;
     }
 }
 
-main {
-    flex: 1;
-}
 
 /*Estilização dos menu*/
 .dropdown-menu a {
@@ -96,8 +87,6 @@ span {
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-
-
 }
 
 .footer-navigation {
@@ -117,6 +106,11 @@ span {
 
 
 /*Estilização dos formulários */
+
+main {
+    flex: 1;
+}
+
 .container {
     max-width: 800px;
     /* Largura máxima do contêiner */
@@ -134,35 +128,21 @@ span {
     /* Gradiente de fundo */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra mais suave */
-    transition: transform 0.3s;
-    /* Animação de transformação */
-}
-
-.container:hover {
-    transform: scale(1.02);
-    
+  
 }
 
 h2 {
     text-align: center;
-    /* Centraliza o título */
     color: #333;
-    /* Cor do texto do título */
     margin-bottom: 20px;
-    /* Espaço abaixo do título */
-    font-family: 'Arial', sans-serif; /* Fonte do título */
+    font-family: 'Arial', sans-serif; 
     font-size: 50px;
 }
 
 label {
     display: block;
-    /* Cada label ocupa toda a largura disponível */
     margin: 10px 0 5px;
-    /* Margens para espaçamento */
-    font-weight: bold;
-    /* Texto em negrito */
     color: #444;
-    /* Cor das labels */
 }
 
 input[type="text"],
@@ -171,19 +151,12 @@ input[type="tel"],
 textarea,
 select {
     width: 100%;
-    /* Largura total */
     padding: 12px;
-    /* Espaçamento interno aumentado */
     border: 1px solid #ccc;
-    /* Borda */
     border-radius: 4px;
-    /* Bordas arredondadas */
     font-size: 16px;
-    /* Tamanho da fonte */
     box-sizing: border-box;
-    /* Inclui o padding e a borda na largura total */
     transition: border-color 0.3s, box-shadow 0.3s;
-    /* Transição suave */
 }
 
 input[type="text"]:focus,
@@ -192,162 +165,124 @@ input[type="tel"]:focus,
 textarea:focus,
 select:focus {
     border-color: #7994c9;
-    /* Borda verde ao focar */
     outline: none;
-    /* Remove o contorno padrão */
-    box-shadow: 0 0 5px rgba(40, 167, 69.5);
-    /* Sombra leve verde */
+    box-shadow: 0 0 5px orangered(40, 167, 69.5);
 }
 
 .flex-container {
     display: flex;
-    /* Exibe os itens em linha */
     flex-wrap: wrap;
-    /* Permite que os itens quebrem para a próxima linha */
     justify-content: space-between;
-    /* Espaça os itens igualmente */
     margin-bottom: 15px;
-    /* Margem inferior */
     width: 100%;
-    /* Largura total */
 }
 
 .flex-item {
     flex: 1;
-    /* Cada item ocupa espaço igual */
     min-width: 220px;
-    /* Largura mínima para os itens */
     margin-right: 10px;
-    /* Margem direita */
 }
 
 .flex-item:last-child {
     margin-right: 0;
-    /* Remove a margem do último item */
 }
 
 .block {
     margin-bottom: 15px;
-    /* Margem inferior */
     width: 100%;
-    /* Largura total */
 }
 
 .product-table {
     width: 100%;
-    /* Largura total da tabela */
     border-collapse: collapse;
-    /* Remove espaçamento entre células */
 }
 
 .product-table th,
 .product-table td {
     border: 1px solid #ccc;
-    /* Borda das células */
     padding: 10px;
-    /* Espaçamento interno */
     text-align: left;
-    /* Alinhamento do texto */
 }
 
 .product-table th {
-    background-color: #f87c08;
-    /* Cor de fundo dos cabeçalhos */
+    background-color: orangered;
     color: white;
-    /* Cor do texto dos cabeçalhos */
-    font-weight: bold;
-    /* Negrito para cabeçalhos */
 }
 
 .product-table tr:hover {
     background-color: rgba(0, 123, 255, 0.1);
-    /* Efeito de destaque ao passar o mouse */
 }
 
 .total-alignment {
     display: flex;
-    /* Exibe os itens em linha */
     justify-content: space-between;
-    /* Espaça os itens igualmente */
     margin: 20px 0;
-    /* Margem superior e inferior */
+    width: 50%;
 }
 
+/*Botão enviar e limpar */
 .buttons {
     display: flex;
-    /* Exibe os botões em linha */
     justify-content: center;
-    /* Centraliza os botões */
     margin-top: 20px;
-    /* Margem superior */
     width: 100%;
-    /* Largura total dos botões */
+}
+
+
+@media (max-width: 800px) {
+
+
+    button {
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #007BFF;
-    /* Cor de fundo do botão */
+    background-color: orangered;
     color: white;
-    /* Cor do texto do botão */
     border: none;
-    /* Remove a borda padrão */
     padding: 12px 20px;
-    /* Espaçamento interno do botão */
     border-radius: 4px;
-    /* Bordas arredondadas */
     cursor: pointer;
-    /* Muda o cursor ao passar o mouse */
     font-size: 16px;
-    /* Tamanho da fonte */
     margin: 0 10px;
-    /* Margem lateral */
     transition: background-color 0.3s, transform 0.3s;
-    /* Efeito de transição */
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #0056b3;
-    /* Cor do botão ao passar o mouse */
+    background-color:#c0392b;
     transform: translateY(-2px);
-    /* Efeito de elevação ao passar o mouse */
+    
 }
 
-textarea {
-    resize: vertical;
-    /* Permite redimensionar verticalmente */
+
+/*Expandir campo descrição da tabela*/
+.campo:hover{
+    position: absolute;
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-20%);
+    z-index: 10;
+    width: 60%;
 }
 
-/* Estilos para os botões de rádio */
-label input[type="radio"] {
-    margin-right: 5px;
-    /* Margem à direita dos botões de rádio */
-}
-
-/* Media queries para responsividade */
-@media (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
-        /* Muda para coluna em telas menores */
-    }
-
-    .flex-item {
-        margin-right: 0;
-        /* Remove a margem à direita */
-        margin-bottom: 15px;
-        /* Margem inferior para espaçamento */
-    }
-
-    .total-alignment {
-        flex-direction: column;
-        /* Alinha os itens em coluna */
-        align-items: flex-start;
-        /* Alinha à esquerda */
-    }
-
-    .buttons {
-        flex-direction: column;
-        /* Alinha os botões em coluna */
-    }
+/*Interação de bom dia, boa tarde e boa noite*/
+#cabecalho {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    background-color: black; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
 }
